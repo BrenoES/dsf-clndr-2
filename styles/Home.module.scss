@@ -19,8 +19,7 @@
   color           : $color-gray-600;
 }
 
-
-.mensure {
+.weAreLeader {
   grid-area       : mensure;
   background-color: $color-blue-100;
   color           : $color-white;
@@ -35,43 +34,47 @@
     justify-content: flex-end;
   }
 
-  & .imageBg {
-    margin               : 0 0 4rem;
-    height               : 17.2rem;
-    width                : 25.6rem;
-    display              : flex;
-    background-image     : url(/mensure.png);
-    background-position-x: 100%;
-    background-repeat    : no-repeat;
-    background-size      : cover;
-    mix-blend-mode       : multiply;
+  & img {
+    mix-blend-mode: multiply;
+  }
+}
 
-    @include for-tablet-up() {
-      height         : 66.8rem;
-      width          : 100%;
-      max-width      : 80%;
-      background-size: contain;
-    }
+.weAreLeaderImageBg {
+  margin               : 0 0 4rem;
+  height               : 17.2rem;
+  width                : 25.6rem;
+  display              : flex;
+  background-image     : url(/mensure.png);
+  background-position-x: 100%;
+  background-repeat    : no-repeat;
+  background-size      : cover;
+  mix-blend-mode       : multiply;
 
-    @include for-desktop-up() {
-      height: 76.8rem;
-    }
+  @include for-tablet-up() {
+    height         : 66.8rem;
+    width          : 100%;
+    max-width      : 80%;
+    background-size: contain;
   }
 
-  & .presentation {
-    padding: 1.5rem;
+  @include for-desktop-up() {
+    height: 76.8rem;
+  }
+}
 
-    @include for-tablet-up() {
-      position : absolute;
-      bottom   : 25%;
-      left     : 4%;
-      max-width: 28rem;
-    }
+.weAreLeaderPresentation {
+  padding: 1.5rem;
 
-    @include for-desktop-up() {
-      bottom: 20%;
-      left  : 8%;
-    }
+  @include for-tablet-up() {
+    position : absolute;
+    bottom   : 25%;
+    left     : 4%;
+    max-width: 28rem;
+  }
+
+  @include for-desktop-up() {
+    bottom: 20%;
+    left  : 8%;
   }
 
   & h2 {
@@ -87,13 +90,9 @@
     font-family: 'Roboto Condensed';
     font-style : normal;
   }
-
-  & img {
-    mix-blend-mode: multiply;
-  }
 }
 
-.mensureRoll {
+.measuring {
   grid-area      : mensure-roll;
   padding        : 2rem;
   height         : 56.8rem;
@@ -117,24 +116,24 @@
       font-size: 4.92rem;
     }
   }
+}
 
-  & figure {
-    margin           : 0;
-    height           : 14.2rem;
-    width            : 28.6rem;
-    background-image : url(/mensure_roll.png);
-    background-repeat: no-repeat;
-    background-size  : contain;
-    mix-blend-mode   : multiply;
+.measuringImageBg {
+  margin           : 0;
+  height           : 14.2rem;
+  width            : 28.6rem;
+  background-image : url(/mensure_roll.png);
+  background-repeat: no-repeat;
+  background-size  : contain;
+  mix-blend-mode   : multiply;
 
-    @include for-tablet-up() {
-      height: 14.8rem;
-      width : 46.6rem;
-    }
+  @include for-tablet-up() {
+    height: 14.8rem;
+    width : 46.6rem;
+  }
 
-    @include for-desktop-up() {
-      height: 25rem;
-      width : 50rem;
-    }
+  @include for-desktop-up() {
+    height: 25rem;
+    width : 50rem;
   }
 }

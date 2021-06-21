@@ -16,7 +16,6 @@ export default function Home() {
       <Head>
         <title>Dsf clndr 2</title>
       </Head>
-
       <div className={styles.container}>
         <header className={`${styles.header} ${isOpen && styles.open}`} >
           <button onClick={() => setIsOpen(!isOpen)}>
@@ -38,17 +37,16 @@ export default function Home() {
           </nav>
         </header>
 
-        <section className={styles.mensureRoll}>
+        <section className={styles.measuring}>
           <h2>Meansuring everything</h2>
-          <figure />
+          <figure className={styles.measuringImageBg}></figure>
         </section >
-        <section className={styles.mensure}>
-          <div className={styles.presentation}>
-            <div className={styles.mensureRollPicBg} />
+        <section className={styles.weAreLeader}>
+          <div className={styles.weAreLeaderPresentation}>
             <h2>We are Leader in Measure Tapes</h2>
             <p>There are 5x the circumference of planet earth in metric tapes.</p>
           </div>
-          <figure className={styles.imageBg}></figure>
+          <figure className={styles.weAreLeaderImageBg}></figure>
         </section>
         <footer className={styles.footer}>
           <aside>

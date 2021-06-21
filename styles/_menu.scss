@@ -85,12 +85,12 @@
     }
 
     & ul {
-        justify-content: space-around;
+        justify-content: space-evenly;
         width          : 100%;
         z-index        : -1;
 
         @include for-tablet-up() {
-            width  : 40%;
+            width  : 50%;
             display: flex;
             z-index: auto;
         }
@@ -102,8 +102,14 @@
         font-size  : 2rem;
 
         @include for-tablet-up() {
-            line-height: 1rem;
-            font-size  : 1rem;
+            line-height   : 1rem;
+            font-size     : 1.1rem;
+            letter-spacing: 0.15rem;
+        }
+
+        @include for-desktop-up() {
+            font-size     : 1.4rem;
+            letter-spacing: 0.2rem;
         }
     }
 }
